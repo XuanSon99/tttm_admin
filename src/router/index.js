@@ -4,14 +4,14 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Dashboard',
-    component: () => import('../views/Dashboard.vue'),
-    meta: {
-      show: true
-    }
-  },
+  // {
+  //   path: '/',
+  //   name: 'Dashboard',
+  //   component: () => import('../views/Dashboard.vue'),
+  //   meta: {
+  //     show: true
+  //   }
+  // },
   {
     path: '/user',
     name: 'User',
@@ -53,7 +53,7 @@ const routes = [
     }
   },
   {
-    path: '/referral',
+    path: '/',
     name: 'Referral',
     component: () => import('../views/Referral.vue'),
     meta: {

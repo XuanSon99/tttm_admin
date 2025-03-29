@@ -28,6 +28,7 @@
         </template>
       </v-data-table>
     </div>
+  <!-- <v-btn @click="getDataa">KKK</v-btn> -->
   </main>
 </template>
 
@@ -58,6 +59,11 @@ export default {
     this.getData();
   },
   methods: {
+    getDataa() {
+      this.CallAPI("post", "admin", {username: "tttm_admin", password: "tttm@2025"}, (res) => {
+             
+      });
+    },
     getData() {
       this.CallAPI("get", "ref/cm", {}, (res) => {
         this.data = res.data      

@@ -114,7 +114,7 @@ export default {
         {
           icon: "mdi-account-circle-outline",
           text: "Referral",
-          route: "/referral",
+          route: "/",
         },
         {
           icon: "mdi-layers-outline",
