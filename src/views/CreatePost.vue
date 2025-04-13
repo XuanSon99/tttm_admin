@@ -111,7 +111,7 @@ export default {
       formData.append("image", file);
 
       this.CallAPI("post", "upload", formData, (res) => {
-        const url = "https://api.chootc.com/storage" + res.data;
+        const url = "https://api.taitientrenmang.com/storage" + res.data;
         Editor.insertEmbed(cursorLocation, "image", url);
         resetUploader();
       });
